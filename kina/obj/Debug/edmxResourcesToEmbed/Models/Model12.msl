@@ -4,7 +4,8 @@
     <EntitySetMapping Name="employes">
       <EntityTypeMapping TypeName="colModel1.employe">
         <MappingFragment StoreEntitySet="employe">
-          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="address" ColumnName="address" />
           <ScalarProperty Name="e_name" ColumnName="e_name" />
           <ScalarProperty Name="e_id" ColumnName="e_id" />
         </MappingFragment>

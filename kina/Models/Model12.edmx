@@ -11,7 +11,8 @@
           </Key>
           <Property Name="e_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="e_name" Type="varchar" MaxLength="20" />
-          <Property Name="salary" Type="int" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNumber" Type="int" />
         </EntityType>
         <EntityType Name="salary_details">
           <Key>
@@ -60,7 +61,8 @@
           </Key>
           <Property Name="e_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="e_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="salary" Type="Int32" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="Int32" />
           <NavigationProperty Name="salary_details" Relationship="colModel1.FK_salary_details_employe" FromRole="employe" ToRole="salary_details" />
         </EntityType>
         <EntityType Name="salary_details">
@@ -94,7 +96,8 @@
           <EntitySetMapping Name="employes">
             <EntityTypeMapping TypeName="colModel1.employe">
               <MappingFragment StoreEntitySet="employe">
-                <ScalarProperty Name="salary" ColumnName="salary" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="address" ColumnName="address" />
                 <ScalarProperty Name="e_name" ColumnName="e_name" />
                 <ScalarProperty Name="e_id" ColumnName="e_id" />
               </MappingFragment>

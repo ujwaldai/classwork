@@ -217,6 +217,7 @@
     <Content Include="Views\salary\create.cshtml" />
     <Content Include="Views\salary\edit.cshtml" />
     <Content Include="Views\salary\Index.cshtml" />
+    <Content Include="Views\salary\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

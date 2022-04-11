@@ -51,6 +51,14 @@ namespace kina.Controllers
             db.SaveChanges();
             return RedirectToAction("index");
         }
-       
+        [HttpPost]
+        public ActionResult Search(DateTime dat)
+        {
+            var results = db.salary_details.Where(x => x.paid_date == dat).ToList();
+            return View("Index",results);
+        }
+    
+    
+
     }
 }

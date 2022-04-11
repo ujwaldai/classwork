@@ -1,0 +1,15 @@
+﻿@model List<kina.Models.salary_details>
+@{
+    ViewBag.Title = "Search";
+
+
+}
+
+<h2>Search</h2>
+@using (Html.BeginForm("Search", null, FormMethod.Post))
+{
+    <a href="@Url.Action("create")">Add new Record</a>
+    <input type="date" name="dat" value="" class="datee" />
+    <input type="submit" value="Search" class="button" />
+
+}

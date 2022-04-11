@@ -14,7 +14,8 @@
     </Key>
     <Property Name="e_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="e_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="salary" Type="Int32" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="Int32" />
     <NavigationProperty Name="salary_details" Relationship="colModel1.FK_salary_details_employe" FromRole="employe" ToRole="salary_details" />
   </EntityType>
   <EntityType Name="salary_details">

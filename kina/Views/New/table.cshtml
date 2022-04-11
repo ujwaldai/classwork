@@ -1,7 +1,7 @@
 ﻿@model List<kina.Models.employe>
 @{
     ViewBag.Title = "table";
-    
+
 }
 
 <h2>table</h2>
@@ -23,6 +23,8 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>Address</th>
+        <th>PhoneNumber</th>
         <th>Action</th>
         <th>Delete</th>
     </tr>
@@ -31,11 +33,13 @@
     {
         <tr>
             <td>@(data.e_id)</td>
-            <td>@(data.e_name)</td>     
+            <td>@(data.e_name)</td>
+            <td>@(data.address)</td>
+            <td>@(data.PhoneNumber)</td>
             <td><a href="@Url.Action("Edit", new { id=data.e_id})">Update</a></td>
             <td><a href="@Url.Action("Delete", new { id=data.e_id})">Delete</a></td>
         </tr>
-}
+    }
 
 
 

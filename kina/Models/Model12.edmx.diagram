@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3b6bf52feeed4b218841129de65a0482" Name="Diagram1">
-        <EntityTypeShape EntityType="colModel1.employe" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="colModel1.employe" Width="1.5" PointX="0.75" PointY="0.875" />
         <EntityTypeShape EntityType="colModel1.salary_details" Width="1.5" PointX="3" PointY="0.875" />
         <AssociationConnector Association="colModel1.FK_salary_details_employe" />
       </Diagram>

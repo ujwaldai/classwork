@@ -22,7 +22,8 @@ namespace kina.Models
     
         public int e_id { get; set; }
         public string e_name { get; set; }
-        public Nullable<int> salary { get; set; }
+        public string address { get; set; }
+        public Nullable<int> PhoneNumber { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<salary_details> salary_details { get; set; }

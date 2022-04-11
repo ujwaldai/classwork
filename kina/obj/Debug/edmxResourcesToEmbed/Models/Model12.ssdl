@@ -6,7 +6,8 @@
     </Key>
     <Property Name="e_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="e_name" Type="varchar" MaxLength="20" />
-    <Property Name="salary" Type="int" />
+    <Property Name="address" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="int" />
   </EntityType>
   <EntityType Name="salary_details">
     <Key>

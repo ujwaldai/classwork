@@ -8,8 +8,9 @@
 <h1>Create</h1>
 @using (Html.BeginForm("SaveData","salary",FormMethod.Post))
 { 
-    <label class="col-md-2">Employee_nabin</label>
+    <label class="col-md-2">Employee</label>
     @Html.DropDownList("employeeList", null, "Select", htmlAttributes: new { @Name = "e_id", @class = "form-control" })
+ 
     <br>
     <label class="col-md-2">S_Id</label>
     <div class="col-md-4">

@@ -35,7 +35,8 @@ namespace kina.Controllers
         {
             employe update = db.employes.Find(employe.e_id);
             update.e_name = employe.e_name;
-            update.salary = employe.salary;
+            update.address = employe.address;
+            update.PhoneNumber = employe.PhoneNumber;
             db.Entry(update).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("table");
